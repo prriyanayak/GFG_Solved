@@ -1,2 +1,9 @@
-# GFG_Solved
-Some Solved Questions from Geeks for Geeks
+# Geeks for Geeks Solved
+
+Categories -
+
+- Basic
+- Easy
+- Medium
+- Hard
+
