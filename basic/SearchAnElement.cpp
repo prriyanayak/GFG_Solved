@@ -14,25 +14,18 @@ int main()
             cin >> arr[i];
         int x;
         cin >> x;
-        int low = 0;
-        int high = n-1;
-        int mid;
         int flag = 0;
-        while(low <= high)
+        int i;
+        for(i = 0; i < n; i++)
         {
-            mid = (low+high)/2;
-            if (arr[mid] == x)
+            if (x == arr[i])
             {
                 flag = 1;
                 break;
             }
-            else if (arr[mid] < x)
-                low = mid + 1;
-            else 
-                high = mid - 1;
         }
         if (flag == 1)
-            cout << mid << endl;
+            cout << i << endl;
         else
             cout << -1 << endl;
     }
