@@ -9,20 +9,19 @@ int main()
         string s;
         cin >> s;
         unordered_map<char, int> final;
+        int flag = 0;
         for(int i = 0; i < s.size(); i++)
         {
             final[s[i]] += 1;
-        }
-        // int flag = 1;
-        // char c;
-        for(auto itr = final.begin(); itr != final.end(); itr++)
-        {
-            if (itr->second > 1)
+            if (final[s[i]] > 1)
             {
-                cout << itr->first << endl;
+                flag = 1;
+                cout << s[i] << endl;
                 break;
             }
         }
+        if (flag == 0)
+            cout << -1 << endl;
     }
 	return 0;
 }
