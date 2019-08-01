@@ -10,9 +10,10 @@ int main()
 	    cin >> n;
 	    
 	    if (n%2 == 0)
-	        cout << (unsigned long int)pow(2,pow(3,(n-1)/2)) << endl;
+	        printf("%.0LF", (long double)pow(2,pow(3,(n-1)/2)));
 	    else
-	        cout << (unsigned long int)pow(2,pow(2,(n-1)/2)) << endl;
+	        printf("%.0LF", (long double)pow(2,pow(2,(n-1)/2)));
+	    cout << endl;
 	}
 	return 0;
 }
